@@ -1,0 +1,19 @@
+{
+  "name": "Ng extension",
+  "version": "1.0",
+  "description": "Build an extension with Angular",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "cookies",
+    "http://pocketlite-app.herokuapp.com/**"
+  ],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Pocketlite"
+  },
+  "background": {
+    "scripts": ["background.js", "runtime.js"]
+  }
+}
