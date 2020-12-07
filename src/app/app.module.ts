@@ -9,6 +9,7 @@ import { MatChipListAutoModule } from '@chan-dev/mat-chip-list-auto';
 
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
+import { SavePageComponent } from './save-page/save-page.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Route[] = [
@@ -28,6 +29,7 @@ const routes: Route[] = [
   /* prettier-ignore */
   declarations: [
     AppComponent,
+    SavePageComponent,
     LoginComponent
   ],
   imports: [

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="form-field">
+    <mat-chip-list-auto
+      class="w-100"
+      ariaLabel="tags"
+      placeholder="Enter tags"
+      [allItems]="allItems"
+      [formControl]="tagControl"
+    ></mat-chip-list-auto>
+  </div>
+  <div class="action-group">
+    <button class="btn btn--outline" type="button" (click)="close()">
+      Close
+    </button>
+    <button
+      *ngIf="!showLoader"
+      [disabled]="tagControl.invalid"
+      [ngClass]="{ 'btn--disabled': tagControl.invalid }"
+      class="btn btn-primary"
+      type="button"
+      (click)="saveBookmark()"
+    >
+      Save
+    </button>
+    <button
+      *ngIf="showLoader"
+      [disabled]="true"
+      class="btn btn-primary btn-loader btn--disabled"
+      type="button"
+    >
+      <i class="fa fa-circle-notch fa-spin" aria-hidden="true"></i>
+      Saving
+    </button>
+  </div>
+</div>

@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-size: 0.875rem;
+  padding: 2rem;
+  min-width: 400px;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn--outline {
+  // background: rgba(209, 213, 219, 1);
+  border: 1px solid lightgray;
+  background: white;
+
+  &:hover {
+    background: rgba(209, 213, 219, 1);
+  }
+}
+
+.btn-primary {
+  background: rgba(220, 38, 38, 1);
+  border: 1px solid lightgray;
+  color: white;
+
+  &:hover {
+    background: rgba(220, 38, 38, 0.8);
+  }
+}
+
+.btn--disabled {
+  &, &:hover {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.action-group {
+  text-align: right;
+}
+
+.action-group > button + button {
+  margin-left: 0.2rem;
+}
