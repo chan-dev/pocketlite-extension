@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Route } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatChipListAutoModule } from '@chan-dev/mat-chip-list-auto';
 
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
@@ -26,7 +30,14 @@ const routes: Route[] = [
     AppComponent,
     LoginComponent
   ],
-  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
+    MatChipListAutoModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
