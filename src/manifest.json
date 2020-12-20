@@ -20,6 +20,7 @@
     "default_title": "Pocketlite"
   },
   "background": {
-    "scripts": ["background.js", "runtime.js"]
+    "scripts": ["background.js", "runtime.js"],
+    "persistent": false
   }
 }
