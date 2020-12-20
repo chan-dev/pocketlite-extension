@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  apiURL: 'http://pocketlite-app.herokuapp.com',
+  // apiURL: 'https://pocketlite-app.herokuapp.com',
+  apiURL: 'http://localhost:3000',
   production: false,
 };
 

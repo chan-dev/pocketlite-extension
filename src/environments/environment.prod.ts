@@ -1,4 +1,4 @@
 export const environment = {
-  apiURL: 'http://pocketlite-app.herokuapp.com',
+  apiURL: 'https://pocketlite-app.herokuapp.com',
   production: true,
 };
