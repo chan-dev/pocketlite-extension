@@ -10,10 +10,12 @@
     "128": "./assets/icon-128.png"
   },
   "permissions": [
+    "tabs",
     "activeTab",
     "webNavigation",
     "cookies",
-    "http://pocketlite-app.herokuapp.com/**"
+    "*://pocketlite-app.herokuapp.com/*",
+    "http://localhost:3000/*"
   ],
   "browser_action": {
     "default_popup": "index.html",
